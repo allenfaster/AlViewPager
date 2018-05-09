@@ -158,9 +158,7 @@ public class AlViewPager extends ViewPager.SimpleOnPageChangeListener implements
         mFragmentCardAdapter = new CardFragmentPagerAdapter(fragmentManager,
                 dpToPixels(2, context), list.get(lastListPosition));
         mFragmentCardShadowTransformer = new ShadowTransformer(inkeViewPager, mFragmentCardAdapter);
-
         inkeViewPager.setAdapter(mFragmentCardAdapter);
-        inkeViewPager.setOffscreenPageLimit(list.get(lastListPosition).size());
         inkeViewPager.setPageTransformer(false, mFragmentCardShadowTransformer);
 
 
