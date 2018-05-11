@@ -176,4 +176,9 @@ public class AlViewPager extends ViewPager.SimpleOnPageChangeListener implements
     public int getCurrentPage() {
         return mCurrentItem;
     }
+
+    //获取条目位置
+    public int getLastListPosition() {
+        return  lastListPosition;
+    }
 }
