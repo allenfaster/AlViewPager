@@ -37,4 +37,12 @@ public class AlverticalViewPager extends VerticalViewPager {
         }
         return  alViewPager.getCurrentPage();
     }
+
+    public int getLastListPosition() {
+
+        if (alViewPager == null) {
+            return -1;
+        }
+        return  alViewPager.getLastListPosition();
+    }
 }
